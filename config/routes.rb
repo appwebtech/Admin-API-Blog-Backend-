@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :admin do 
+  	resources :moderators, only: [:index] # Dont want moderator to delete himself. Se he can only see index.
+  end
 end
