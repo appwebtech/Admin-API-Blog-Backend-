@@ -1,0 +1,21 @@
+<h1>Edit Moderators</h1>
+
+<%= form_for [:admin, @moderator] do |josembi| %>
+	<p>
+		<%= josembi.label :fullname %>
+		<%= josembi.text_field :fullname %>
+	</p>
+
+	<p>
+		<%= josembi.label :username %>
+		<%= josembi.text_field :username %>
+	</p>
+
+	<p>
+		<%= josembi.label :password %>
+		<%= josembi.password_field :password %>
+	</p>
+
+	<p> <%= josembi.submit %></p>
+
+<% end %>
