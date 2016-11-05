@@ -26,4 +26,7 @@ Things you may want to cover:
 
 ## Faker Gem
 
+## Kaminari Gem
+
+
 
