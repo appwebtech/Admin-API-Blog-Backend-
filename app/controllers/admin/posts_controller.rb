@@ -17,7 +17,8 @@ end
     if @post.save
       redirect_to admin_posts_url, notice: 'Post Was Created Successfully'
     else
-      flash[:alert] = 'There was a Probòem Creating Your Post'
+      flash[:alert] = 'There was a Problem Creating Your Post'
+      render :new
     end
   end
 

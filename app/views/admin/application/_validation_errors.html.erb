@@ -1,0 +1,12 @@
+
+<% if @moderator.errors.any? %>
+  <div id="validation_errors">
+    <h2><%= pluralize(@moderator.errors.count, "error") %> prohibited a successful save:</h2>
+ 
+    <ul>
+    <% @moderator.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
