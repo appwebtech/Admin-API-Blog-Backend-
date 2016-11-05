@@ -41,6 +41,10 @@ end
   end
 
   def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+
+    redirect_to :back, notice: 'Your Post was Successfully Deleted.'
   end
 
 
