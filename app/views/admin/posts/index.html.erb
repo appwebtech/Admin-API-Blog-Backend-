@@ -1,2 +1,28 @@
 <h1>Admin Posts Page</h1>
-<p>Find me in app/views/admin/posts/index.html.erb</p>
+
+<p><%= link_to 'New Post', new_admin_post_path %></p>
+
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th>title</th>
+			<th>publicj</th>
+			<th>actions</th>
+		</tr>
+	</thead>
+	<tbody>
+
+	<%= @posts.each do |joe| %>
+		<tr>
+			<td><%= truncate(joe.title, length: 60, seperate: '') %></td>
+			<td><%= joe.publish %></td>
+			<td>
+				<%= link_to 'Edit', edit_admin_post_path(joe) %> |
+				<%= link_to 'Show', admin_post_path(joe) %> |
+				<%= link_to 'Delete', admin_post_path(joe), method: :delete, data: {confirm: 'Are you sure?'} %> 
+			</td>
+			
+		</tr>
+		<% end %>
+	</tbody>
+</table>
