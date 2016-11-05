@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   	resources :sessions, only: [:new, :create, :destroy]
   	resources :moderators, only: [:index, :edit, :update] # Dont want moderator to delete himself. Se he can only see index.
     resources :posts
+    resources :tags, except: [:index]
   end
 end
