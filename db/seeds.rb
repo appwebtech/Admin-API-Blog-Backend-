@@ -10,3 +10,18 @@ moderator = Moderator.create(
 	fullname: "Joseph Mwania",
 	username: "josembi@gmail.com",
 	password: "foobar")
+
+# Seeding Posts (Used the DB Table that I Mockified to enhance Visual view to my Clients.)
+30.times do
+	post = Post.create(
+		title: Faker::Lorem.sentence(20),   # Get Faker generator codes in GitHub
+		content: Faker::Lorem.paragraph,
+		publish: true,
+		moderator: moderator)
+
+	# Seeding Tag
+	tag = Tag.create(name: Faker::Lorem.word)
+
+	# Seeding Post_Tag
+	post_tag = PostTag.create(post: post, tag: tag) # Reference post from line 15
+end
