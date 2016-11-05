@@ -1,28 +1,3 @@
 <h1>Admin::Posts#new</h1>
 
-<%= render 'validation_errors', object: @moderator %>
-
-<%= form_for [:admin, @post] do |jose| %>
-
-<p>
-	<%= jose.label :title %>
-	<%= jose.text_field :title %>
-</p>
-
-<p>
-	<%= jose.label :content %>
-	<%= jose.text_field :content %>
-</p>
-
-<p>
-	<%= jose.label :publish %>
-	<%= jose.check_box :publish %>
-</p>
-
-<p>
-	<%= jose.select :tag_ids, Tag.all.collect {|muangwa| [muangwa.name, muangwa.id]}, {prompt: 'Select Tag'}, multiple: :true %>
-</p>
-
-<p><%= jose.submit %></p>
-
-<% end %>
+<%= render 'form', post: @post %>
