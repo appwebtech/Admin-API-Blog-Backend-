@@ -24,4 +24,12 @@ moderator = Moderator.create(
 
 	# Seeding Post_Tag
 	post_tag = PostTag.create(post: post, tag: tag) # Reference post from line 15
+
+	# Populate Comments
+	visitor = Visitor.create(fullname: Faker::Name.name, 
+														email: Faker::Internet.email)
+	comment = Comment.create(message: Faker::Lorem.paragraph,
+													 status: [true, false].sample,
+													 post: post,
+													 visitor: visitor)
 end
