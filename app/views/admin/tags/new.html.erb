@@ -24,7 +24,7 @@
 			<td><%= status_converter(tag.in_use?, truthy: 'in use', falsey: 'not in use') %></td>
 			<td><%= time_ago tag.created_at %></td>
 			<td>
-					<%= link_to new_admin_tag_path(tag) do %>
+					<%= link_to edit_admin_tag_path(tag) do %>
 					<button type="button">Edit</button>
 					<% end %>
 					
