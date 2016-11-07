@@ -26,12 +26,10 @@
 			<td>
 					<%= link_to new_admin_tag_path(tag) do %>
 					<button type="button">Edit</button>
+					<% end %>
+					
+				<%= create_deletable_button tag %> 
 
-					<%= link_to admin_tag_path(tag), method: :delete do %>
-					<button type="button">Delete</button>
-
-				<% end %>
-				<% end %>
 			</td>
 		</tr>
 		<% end %>
