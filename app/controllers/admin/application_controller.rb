@@ -17,4 +17,5 @@ class Admin::ApplicationController < ActionController::Base
 			redirect_to '/login', alert: 'Please login to view admin pages'
 		end
 	end
+	
 end
