@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
 	get '/login' => 'admin/sessions#new'
 	get '/logout' => 'admin/sessions#destroy'
 
@@ -12,5 +13,6 @@ Rails.application.routes.draw do
     resources :visitors, only: [:index, :destroy]
     resources :comments, only: [:index, :update, :destroy]
     resources :tags, except: [:index]
+    resources :notifications, only: [:index, :destroy]
   end
 end
