@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     resources :comments, only: [:index, :update, :destroy]
     resources :tags, except: [:index]
     resources :notifications, only: [:index, :destroy]
+    resources :settings, only: [:new, :create, :edit, :update]
   end
 
   match 'dismiss_all_notifications', to: 'admin/notifications#delete_all', via: :delete
