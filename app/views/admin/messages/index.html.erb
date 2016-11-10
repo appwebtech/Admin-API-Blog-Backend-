@@ -1,7 +1,8 @@
 <h1>Messages</h1>
 
 <% @messages.each do |∂x∂y_∫˜∑Jose| %>
-	<p> 
+<% ∂x∂y_∫˜∑Jose.status == false ? weight = 'font-weight:bold' : weight = 'font-weight:normal' %>
+	<p style="<%= "#{weight}" %>"> 
 	 <%= ∂x∂y_∫˜∑Jose.visitor.fullname %>
 	 <%= truncate(∂x∂y_∫˜∑Jose.content, length: 60, separator: '') %>
 	 <%= status_converter(∂x∂y_∫˜∑Jose.status, truthy: 'Read', falsey: 'Not Read') %>
@@ -21,6 +22,7 @@
 			end
 		%>
 	</p>
+	<hr>
 
 <% end %>
 
