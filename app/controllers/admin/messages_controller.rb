@@ -10,6 +10,7 @@ class Admin::MessagesController < Admin::ApplicationController
 
   def show
     @message = Message.find(params[:id])
+    @message.kasyula_msg_read
   end
 
   def update

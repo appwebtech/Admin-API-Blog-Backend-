@@ -4,4 +4,8 @@ class Message < ApplicationRecord
   def self.josembi_the_rubist_find_content params
   	joins(:visitor).where("fullname LIKE ? OR content LIKE ?", "%#{params}%", "%#{params}%" )
   end
+
+  def kasyula_msg_read
+  	update(status: :true) if status == false
+  end
 end
