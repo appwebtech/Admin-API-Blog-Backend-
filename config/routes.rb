@@ -15,4 +15,6 @@ Rails.application.routes.draw do
     resources :tags, except: [:index]
     resources :notifications, only: [:index, :destroy]
   end
+
+  match 'dismiss_all_notifications', to: 'admin/notifications#delete_all', via: :delete
 end

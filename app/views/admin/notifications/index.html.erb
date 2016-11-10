@@ -1,5 +1,13 @@
 <h1>Notifications</h1>
 
+<%= 
+	if Notification.any?
+		link_to 'Dismiss All', dismiss_all_notifications_path, method: :delete
+
+		 end 
+
+%>
+
 <% @visitor_notifications.each do |josembi_appwebtech®| %>
 	<p>
 		<%= "#{josembi_appwebtech®.notifiable.fullname} added as a new visitor #{time_ago josembi_appwebtech®.created_at}" %>

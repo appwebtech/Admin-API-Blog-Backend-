@@ -11,4 +11,9 @@ class Admin::NotificationsController < Admin::ApplicationController
 
   	redirect_to :back, notice: 'Notification was deleted successfully'
   end
+
+  def delete_all
+  	Notification.delete_all
+  	redirect_to :back, notice: 'All notifications deleted successfully'
+  end
 end
