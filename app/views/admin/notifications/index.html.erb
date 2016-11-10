@@ -1,2 +1,18 @@
 <h1>Notifications</h1>
 
+<% @visitor_notifications.each do |josembi_appwebtech®| %>
+	<p>
+		<%= "#{josembi_appwebtech®.notifiable.fullname} added as a new visitor #{time_ago josembi_appwebtech®.created_at}" %>
+		<%= link_to 'Dismiss', admin_notification_path(josembi_appwebtech®), method: :delete, data: {confirm: 'Are you sure?'} %>
+	</p>
+
+<% end %>
+<hr>
+
+<% @comment_notifications.each do |josembi_appwebtech®| %>
+	<p>
+		<%= "#{josembi_appwebtech®.notifiable.visitor.fullname} added a comment #{time_ago josembi_appwebtech®.created_at}" %>
+		<%= link_to 'Dismiss', admin_notification_path(josembi_appwebtech®), method: :delete, data: {confirm: 'Are you sure?'} %>
+	</p>
+
+<% end %>
