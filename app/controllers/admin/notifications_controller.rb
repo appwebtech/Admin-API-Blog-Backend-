@@ -1,4 +1,5 @@
-class Admin::NotificationsController < ApplicationController
+class Admin::NotificationsController < Admin::ApplicationController
+	
   def index
   end
 
