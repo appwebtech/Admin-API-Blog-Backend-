@@ -21,6 +21,20 @@
 <hr>
 </p>
 <%= form_for @visitor_comment, url: comments_url do |∑ß_rebase_form| %>
+
+	<% if session[:visitor_errors] %>
+		<div id="error_explanation">
+			<h2>
+				<%= pluralize(session[:visitor_errors].count, "error") %> prohibited this comment from being saved:
+			</h2>
+			<ul>
+				<% session[:visitor_errors].each do |message| %>
+					<li><%= message %></li>
+					<% end %>
+			</ul>
+		</div>
+	<% end %>
+
 	<p>
 		<%= ∑ß_rebase_form.label :fullname %>
 		<%= ∑ß_rebase_form.text_field :fullname %>
