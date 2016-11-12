@@ -1,6 +1,6 @@
 class Admin::SettingsController < Admin::ApplicationController
   def new
-  	if Setting.any?
+  	if SSetting.any?
   		redirect_to edit_admin_setting_url(Setting.first)
   	else
   	@setting =Setting.new
