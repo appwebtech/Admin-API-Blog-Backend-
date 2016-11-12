@@ -10,4 +10,6 @@ class Comment < ApplicationRecord
   def self.josembi_wa_kimeu params
   	joins(:visitor).where("fullname LIKE ? OR message LIKE ?", "%#{params}%", "%#{params}%")
   end
+
+  include Josembi
 end
