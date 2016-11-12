@@ -18,6 +18,25 @@
 	<b><%= comment.visitor.fullname %> </b> commented: <%= time_ago @post.created_at %>
 
 <% end %>
-
-	
+<hr>
 </p>
+<%= form_for @visitor_comment, url: comments_url do |∑ß_rebase_form| %>
+<p>
+	<%= ∑ß_rebase_form.label :fullname %>
+	<%= ∑ß_rebase_form.text_field :fullname %>
+</p>
+
+<p>
+	<%= ∑ß_rebase_form.label :email %>
+	<%= ∑ß_rebase_form.text_field :email %>
+</p>
+
+<%= ∑ß_rebase_form.fields_for :comments do |∑ß∂_recursive| %>
+	<p>
+		<%= ∑ß∂_recursive.label :message %>
+		<%= ∑ß∂_recursive.text_area :message %>
+	</p>
+<% end %>
+<p><%= ∑ß_rebase_form.submit 'Add Comment' %></p>
+
+<% end %>
