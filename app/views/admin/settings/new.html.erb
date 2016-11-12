@@ -1,34 +1,3 @@
 <h1>Settings</h1>
 
-<%= form_for [:admin, @setting] do |joe_form| %>
-	<p>
-		<%= joe_form.label :site_name %><br>
-		<%= joe_form.text_field :site_name %><br>
-	</p>
-
-	<p>
-		<%= joe_form.label :post_per_page %><br>
-		<%= joe_form.number_field :post_per_page %><br>
-	</p>
-
-	<p>
-		<%= joe_form.label :under_maintenance %><br>
-		<%= joe_form.check_box :under_maintenance %><br>
-	</p>
-
-	<p>
-		<%= joe_form.label :prevent_commenting %><br>
-		<%= joe_form.select :prevent_commenting, [['disable', false], ['active', true]] %><br>
-	</p>
-
-	<p>
-	<%= joe_form.label :tag_visibility %><br>
-	<%= joe_form.select :tag_visibility, [['active', true], ['disable', false]] %><br>
-	</p>
-
-	<p>
-		<%= joe_form.submit %>
-	</p>
-
-
-<% end %>
+<%= render 'form' %>
