@@ -1,2 +1,37 @@
 <h1>Messages#new</h1>
-<p>Find me in app/views/messages/new.html.erb</p>
+
+<%= form_for @visitor_message, url: messages_url do |∑ß_rebase_form| %>
+
+	<% if @visitor_message.errors.any? %>
+		<div id="error_explanation">
+			<h2>
+				<%= pluralize(@visitor_message.errors.count, "error") %> prohibited this comment from sending:
+			</h2>
+			<ul>
+				<% @visitor_message.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+					<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= ∑ß_rebase_form.label :fullname %>
+		<%= ∑ß_rebase_form.text_field :fullname %>
+	</p>
+
+	<p>
+		<%= ∑ß_rebase_form.label :email %>
+		<%= ∑ß_rebase_form.text_field :email %>
+	</p>
+
+	<%= ∑ß_rebase_form.fields_for :messages do |∑ß∂_recursive| %>
+		<p>
+			<%= ∑ß∂_recursive.label :content %>
+			<%= ∑ß∂_recursive.text_area :content %>
+
+		</p>
+	<% end %>
+	<p><%= ∑ß_rebase_form.submit 'Send Message' %></p>
+
+<% end %>
