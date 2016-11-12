@@ -7,6 +7,7 @@ class Post < ActiveRecord::Base
   validates :title, presence: true
   validates :content, presence: true
 
+  scope :published, -> { where(publish: true).order(id: :desc) }
 
   def self.josembi search
   	where("title LIKE ? OR content LIKE ?", "%#{search}%", "%#{search}%")

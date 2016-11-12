@@ -3,7 +3,9 @@ class Comment < ApplicationRecord
   belongs_to :visitor
   has_many :notifications, as: :notifiable,  dependent: :destroy
 
-  # def josembi_wa_kimeu params
-  # 	joins(:visitor).where("fullname LIKE ? OR message LIKE ?", "%#{params}%", "%#{params}%")
-  # end
+  scope :approved, -> { where status: true }
+
+  def self.josembi_wa_kimeu params
+  	joins(:visitor).where("fullname LIKE ? OR message LIKE ?", "%#{params}%", "%#{params}%")
+  end
 end
