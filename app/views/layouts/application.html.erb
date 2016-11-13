@@ -10,7 +10,7 @@
 
   <body>
   
-  <%= render 'shared/nav' %>
+
 
   <% if flash[:notice] %>
   	<div class="notice"><%= flash[:notice] %></div>
@@ -23,7 +23,7 @@
     <%= link_to 'Log out', logout_path %>
     
 
-    
+  
     <%= yield %>
   </body>
 </html>
