@@ -259,7 +259,7 @@ The following table shows the gems I used for this project. Most of the default 
 
 ### 07.1 Hashed Password 
 
-Disclaimer: Some static images were been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants to me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating GitHub gh-pages and what not. I'm super busy. So undo-commit for images and......later!
+Disclaimer: Some static images were been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating GitHub gh-pages and what not then link the image folder, etc. I'm super busy. So switching to main branch without img commits and......later!
 
 < Ente img here>
 
@@ -313,4 +313,4 @@ https://it.pinterest.com/appwebtech/
 
 MIT License. Copyright 2016 Appwebtech. http://theappwebtech.com
 
-Disclaimer: I apolologise for my commit messages. "They are raw and un-edited" with some un-professional lingo. It does happen when coding late at night with the sole intention of making an app to be viewed without the source code. So sorry for that.
+Disclaimer: I apologise for some of my commit messages. "They are raw and un-edited" with some un-professional lingo. It does happen when coding late at night if the sole intention of making the app is to be viewed without the source code or when running a hackathon with other developers. Sorry for that.
