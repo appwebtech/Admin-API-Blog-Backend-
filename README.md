@@ -1,6 +1,8 @@
-# Admin API (Ruby on Rails *BACKEND system*)
+
 
 <div align="center">
+<h1>Admin API Ruby on Rails <em>Backend system</em></h1> 
+<h2>Synopsis of Software Development</h2>
   <h3>
     <a href="#">
       FrontEnd
@@ -17,15 +19,12 @@
 </div>
 
 <div align="center">
-  <sub>Admin API BackEnd System. Built with ❤︎ by
+  <sub>Built with ❤︎ by
   <a href="https://github.com/appwebtech">Joseph M Mwania</a> for
   <a href="http://theappwebtech.com/">
     Appwebtech
   </a>
 </div>
-
-# Synopsis of Software Development
-
 
 ## Introduction
 
@@ -35,7 +34,7 @@ Many a client who are in need of a Website App find themselves in a dilemma on w
 
 After a series of e-mailing, they realise that the dude or dudess(I'm all for  affirmative action fellows :-) does only half of the work. The designer would normally do [FrontEnd Design work](https://www.toptal.com/front-end/job-description), the developer would do [BackEnd Development](https://www.toptal.com/back-end/job-description) whilst a [FullStack Developer](https://www.rubysteps.com/articles/2014/so-you-want-to-become-a-full-stack-developer/) has the sweet spot of doing both FrontEnd and BackEnd work. 
 
-<img src="https://www.dropbox.com/s/nmxuj419q0sn1z7/Fullstack.jpeg?dl=0" alt="FullStack">
+![fullstack](https://cloud.githubusercontent.com/assets/20464709/21051393/562fecee-be20-11e6-844c-f6e2105b454c.jpeg)
 
 From my experience, I have come to realise that many are not aware what it means by Client Side and Server Side. They always say; I just want it to look "Amazing", "Beautiful!", "Great!", or even "Awesome!". This is what has led me to do this project in tranches using [SoC](https://en.wikipedia.org/wiki/Separation_of_concerns) as an eye opener of what it means to work on the Client (FrontEnd) and Server (BackEnd). 
 
@@ -78,43 +77,44 @@ Ruby is compatible with Frameworks like Rails, Sinatra, Padrino, Cuba etc and em
 When you get the hang of Ruby and a Framework of your choice you become very productive and organised. Security can be enhanced using a one line of code, and Cross-site Scripting (XSS) are rare in Ruby Applications. 
 
 Been an Open-Source enthusiast, I can't help mentioning that Ruby is Open Source like Linux, etc which is the future of Software Development Engineering in my opinion. 
+<br><br><hr>
 
 # Technical Requirements
 
 <h3>Table of Contents</h3>
 <details>
-- [1. Ruby and Rails Environment](#1.-Ruby-and-Rails-Environment)
-- [2. Byebug minitest for Testing and Debugging](#2.-Byebug-minitest-for Testing-and-Debugging)
-  - [Build Status](#Build-Status)
-  - [Requirements](#Requirements)
-- [3. Kaminari](#3.-Kaminari)
-  - [Clean](#Clean)
-  - [Easy to use](#Easy-to-use)
-  - [Simple scope-based API](#Simple-scope-based-API)
-  - [Customizable engine-based I18n-aware helper](#Customizable-engine-based-I18n-aware-helper)
-- [4. Bootsrap-sass](#html-css-and-javascript-for-web-developers)
-- [5. Faker](#5.-Faker)
-- [07. Database Snapshots](#07.-Database-Snapshots)
-  - [07.1 Hashed Password ](#07.1-Hashed-Password )
-  - [07.2 Active Record Models Tables](#07.2-Active-Record-Models-Tables)
-  - [07.3 Active Record Models Schema](#07.3-Active-Record-Models-Schema)
-  - [07.4 Active Record Models Data](#07.4-Active-Record-Models-Data)
-   - [07.4.1 Settings](#07.4.1-Settings)
-   - [07.4.2 Moderators](#07.4.2-Moderators)
-   - [07.4.3 Posts](#07.4.3-Posts)
-   - [07.4.4 Post Tags](#07.4.4-Post-Tags)
-   - [07.4.5 Tags](#07.4.5-Tags)
-   - [07.4.6 Comments](#07.4.6-Comments)
-   - [07.4.7 Visitors](#07.4.7-Visitors)
-   - [07.4.8 Notifications](#07.4.8-Notifications)
-   - [07.4.9 Messages](#07.4.9-Messages)
-- [08. Deployment instructions](#08.-Deployment-instructions)
-- [09. Developer](#09.-Developer)
-- [10. Contacts](#10.-Contacts)
+- [Ruby and Rails Environment](#ruby-and-rails-environment)
+- [Byebug minitest for Testing and Debugging](#byebug-minitest-for-testing-and-debugging)
+  - [Build Status](#build-status)
+  - [Requirements](#requirements)
+- [Kaminari](#kaminari)
+  - [Clean](#clean)
+  - [Easy to use](#easy-to-use)
+  - [Simple scope-based API](#simple-scope-based-api)
+  - [Customizable engine-based I18n-aware helper](#customizable-engine-based-I18n-aware-helper)
+- [Bootsrap-sass](#bootsrap-sass)
+- [Faker](#faker)
+- [Database Snapshots](#database-snapshots)
+  - [Hashed Password ](#hashed-password )
+  - [Active Record Models Tables](#active-record-models-tables)
+  - [Active Record Models Schema](#active-record-models-schema)
+  - [Active Record Models Data](#active-record-models-data)
+   - [Settings](#settings)
+   - [Moderators](#moderators)
+   - [Posts](#posts)
+   - [Post Tags](#post-tags)
+   - [Tags](#tags)
+   - [Comments](#comments)
+   - [Visitors](#visitors)
+   - [Notifications](#notifications)
+   - [Messages](#messages)
+- [Deployment instructions](#deployment-instructions)
+- [Developer](#developer)
+- [Contacts](#contacts)
 </details>
 
 
-## 1. Ruby and Rails Environment 
+## Ruby and Rails Environment 
 
 My coding environment.
 ```ruby
@@ -130,7 +130,7 @@ npm -cli version 3.10.3
 ```
 
 
-## 2. Byebug minitest for Testing and Debugging 
+## Byebug minitest for Testing and Debugging 
 
 [![Version][gem]][gem_url]
 [![Quality][gpa]][gpa_url]
@@ -187,7 +187,7 @@ Windows [![Vey][vey]][vey_url]
   * MRI 2.2.4 or higher.
   * MRI 2.3.0 or higher.
 
-## 3. Kaminari
+## Kaminari
 
 ### Kaminari
 [![Build Status](https://travis-ci.org/amatsuda/kaminari.svg)](http://travis-ci.org/amatsuda/kaminari)
@@ -211,7 +211,7 @@ No special collection class or anything for the paginated values, instead using 
 ### Customizable engine-based I18n-aware helper
 As the whole pagination helper is basically just a collection of links and non-links, Kaminari renders each of them through its own partial template inside the Engine. So, you can easily modify their behaviour, style or whatever by overriding partial templates.
 
-## 4. Bootsrap-sass
+## Bootsrap-sass
 
 [![Gem Version](https://badge.fury.io/rb/bootstrap-sass.svg)](http://badge.fury.io/rb/bootstrap-sass)
 [![npm version](https://img.shields.io/npm/v/bootstrap-sass.svg?style=flat)](https://www.npmjs.com/package/bootstrap-sass)
@@ -229,7 +229,7 @@ gem 'sass-rails', '>= 3.2'
 ```
 
 
-## 5. Faker
+## Faker
 
 ### Faker [![Build Status](https://travis-ci.org/stympy/faker.svg?branch=master)](https://travis-ci.org/stympy/faker) [![Gem Version](https://badge.fury.io/rb/faker.svg)](https://badge.fury.io/rb/faker)
 
@@ -275,7 +275,7 @@ end
 ```
 
 
-## 06. Gems
+## Gems
 
 The following table shows the gems I used for this project. Most of the default gems were updated with current versions via [Ruby Gems](https://rubygems.org/) whilst others worked well in their older versions. I grouped some of the gems from their default state to development test or production so as not to mix things up. 
 
@@ -308,9 +308,9 @@ The following table shows the gems I used for this project. Most of the default 
      `production`        | `PostgreSQL`   | `0.8.1`
 
 
-## 07. Database Snapshots
+## Database Snapshots
 
-### 07.1 Hashed Password 
+### Hashed Password 
 
 NB: Some static images have been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating gh-pages and what not then link the image folder, etc. I'm super busy. So I'll switch to main branch without img commits and sort out......later!
 
@@ -329,20 +329,20 @@ For a 12 bytes password, it would roughly take ~0,22s (~2^-2s) for 65536 (1.1857
 Even the best super-computers in the world that some folks are using to mint Bitcoins wouldn't be able to brute-force successfully that hash. That's why Ruby on Rails in built security features are efficient in detering attacks. Malicious scripting, CSRF, DoS, DDoS etc are often targeted in vulnerable web platfroms. 
 
 
-### 07.2 Active Record Models Tables
+### Active Record Models Tables
 
 I created different models eg Comments, Messages, Moderators etc and made associations between them to simplify things by hitting the DB in a straight forward way without overloading it. This is very useful especially when the client is adding or deleting data from the View. 
 
 Below is the Database Architecture Mockup. 
 
-<img src="https://www.dropbox.com/s/76xlwo7xkm3vi6b/Workbench.png?dl=0" alt="DataBase Architecture_Josembi">
+![workbench](https://cloud.githubusercontent.com/assets/20464709/21051430/7df0d8ce-be20-11e6-8da2-7865e5ac0b5b.png)
 
 I have paired the models to illustrate which active record belongs where with a clear illustration of Associations (has_one, has_and_belongs_to_many, has_and_belongs, etc).
 
 I also made a twist of the DB architecture design to create a Polymorphic Association. If you look at the "belongs_to" Notifications declaration model, you see that the model itself has an identification ID, a notifiable_id which is a VARCHAR(45), an notifiable_type of VARCHAR(45) and a comments_id which is an integer {*I wont go in depth about SQL character size here*}.
 The vital thing to note is the ability to use polymorphism to save two models in one table.
 
-### 07.3 Active Record Models Schema
+### Active Record Models Schema
 
 The Ruby DSL within the Active Record is amazing in creating dynamic databases. The [RDBMS](https://en.wikipedia.org/wiki/Relational_database) that Ruby uses is easily queried via the Interactive Ruby Shell ([IRB](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell)) while programming. After creating a Mockup of how I intended the database to look, I created migrations and the schema for each model is illustrated below.
 
@@ -432,21 +432,23 @@ end
 
 
 
-### 07.4 Active Record Models Data
+### Active Record Models Data
 
 I won't go into details explaining what is happening on each individual model due to the complexities of data interaction within the MVC, but the important thing is to portray how data is stored, accessed, created and modified. From the UI of the website, the owner can grant administrator priviledges to third parties who would still act as a moderator.
-
-#### 07.4.1 Settings
+<br><hr>
+#### Settings
 The Settings model access is accessed only by the moderator via login credentials and s/he can approve posts, change page settings among other [CRUD](http://searchdatamanagement.techtarget.com/definition/CRUD-cycle) operations.
-<img src="https://www.dropbox.com/s/8lg2bidfgau0gjp/Setttings.png?dl=0" alt="Settings">
+![setttings](https://cloud.githubusercontent.com/assets/20464709/21051610/65726d8e-be21-11e6-98a8-25fd509ad8ef.png)
 
-#### 07.4.2 Moderators
+<br><hr>
+#### Moderators
 A clear view of how the password_digest stores passwords. They cannot be viewed as string entity but as a cryptographic [hash function](https://en.wikipedia.org/wiki/Hash_function) 
-<img src="https://www.dropbox.com/s/vixjkd4s54ndl5f/Moderators.png?dl=0" alt="Moderators">
+![moderators](https://cloud.githubusercontent.com/assets/20464709/21051616/76af5652-be21-11e6-9104-434facb40e77.png)
 
-#### 07.4.3 Posts
+<br><hr>
+#### Posts
 The Posts model can accept many comments (has_many), can accept many tags (has_many) and only the moderator can make modifications. (belongs_to {moderator}) 
-<img src="https://www.dropbox.com/s/6afor7kzvzpbjlu/Posts.png?dl=0" alt="Posts">
+![posts](https://cloud.githubusercontent.com/assets/20464709/21051624/82a4bcc2-be21-11e6-9917-238a128e56dc.png)
 Ruby is pretty readable and the code Associations can illustrate that below.
 
 ```ruby
@@ -472,17 +474,23 @@ end
 
 ```
 
-#### 07.4.4 Post Tags
+<br><hr>
+
+#### Post Tags
 Apart from the main table id, a post and tag id have been added to tag each post.
-<img src="https://www.dropbox.com/s/2byfpv1iuoy7ah9/PostTags.png?dl=0" alt="Post Tags">
+![posttags](https://cloud.githubusercontent.com/assets/20464709/21051630/8a0084e2-be21-11e6-8e33-cfe6280d8383.png)
 
-#### 07.4.5 Tags
+<br><hr>
+
+#### Tags
 A tag name of value string has been added. This can be handy when searching the database. In present day, a database can hit the one million records mark within days if not hours.
-<img src="https://www.dropbox.com/s/50kedcmr6ewtntf/Tags.png?dl=0" alt="Tags">
+![tags](https://cloud.githubusercontent.com/assets/20464709/21051641/9896fb6c-be21-11e6-9da0-9d6a18931f60.png)
 
-#### 07.4.6 Comments
+<br><hr>
+
+#### Comments
 The Comments model inherits from the ApplicationRecord and belongs_to Visitor, Post and has_many notifications.
-<img src="https://www.dropbox.com/s/6uzn6sqcyk82g5r/Comments.png?dl=0" alt="Comments">
+![comments](https://cloud.githubusercontent.com/assets/20464709/21051666/b467aa12-be21-11e6-9b14-3367bca85e29.png)
 
 ```ruby
 class Comment < ApplicationRecord
@@ -503,9 +511,11 @@ end
 
 ```
 
-#### 07.4.7 Visitors
+<br><hr>
+
+#### Visitors
 Hopefully the trend is becoming clear now. The image shows generated data of the Visitor model. Each visitor has a fullname, an e-mail and the date s/he was created and/or updated. Each visitor will accept nested attributes from Comments & Messages and has_many (Notifications, Comments and Messages). 
-<img src="https://www.dropbox.com/s/r53k02p5pa7anjf/Visitors.png?dl=0" alt="Visitors">
+![visitors](https://cloud.githubusercontent.com/assets/20464709/21051679/c3638b9e-be21-11e6-92d7-69227138e652.png)
 
 For a cleaner coding environment, I've created a service "visitor_jose_service.rb" that will ensure efficient communication by the controller to the database. The rule of the thump is to have a fast access of data. In an e-commerce website where upselling is vital, you dont want users to switch to another website due to a slow platform.
 
@@ -651,13 +661,17 @@ Below is an html form embedded in ruby. *(Syntax may not highlight properly due 
 ```
 
 
-#### 07.4.8 Notifications
-Has a notifiable type of either Visitor or Comment, a clear illustration of Polymorphism.
-<img src="https://www.dropbox.com/s/4xe0w4je00xx85q/Notifications.png?dl=0" alt="Notifications">
+<br><hr>
 
-#### 07.4.9 Messages
+#### Notifications
+Has a notifiable type of either Visitor or Comment, a clear illustration of Polymorphism.
+![notifications](https://cloud.githubusercontent.com/assets/20464709/21051708/dc6fe9c0-be21-11e6-8c39-3efeb8a29f20.png)
+
+<br><hr>
+
+#### Messages
 Message content is shown in the image and it's relative validations and associations in the code.
-<img src="https://www.dropbox.com/s/avnlzb5waukdpjm/Messages.png?dl=0" alt="Messages">
+![messages](https://cloud.githubusercontent.com/assets/20464709/21051731/e945cc64-be21-11e6-8a76-cf3bceaaa734.png)
 
 ```ruby
 class Message < ApplicationRecord
@@ -677,7 +691,9 @@ end
 ```
 
 
-## 08. Deployment instructions
+<br><hr>
+
+## Deployment instructions
 
 I usually deploy to Heroku by doing the following. 
 - 1. Version Control (Git). 
@@ -686,11 +702,11 @@ I usually deploy to Heroku by doing the following.
 - 4. Access logs by inputting the heroku logs.
 
 
-## 09. Developer
+## Developer
 
 Joseph M Mwania. 
 
-## 10. Contacts
+## Contacts
 
 http://www.theappwebtech.com/
 
@@ -711,8 +727,6 @@ Once again, sorry for that, It does happen when coding late at night if the sole
 ## License
 
 MIT License. Copyright 2016 Appwebtech. http://theappwebtech.com
-
-
 
 
 
