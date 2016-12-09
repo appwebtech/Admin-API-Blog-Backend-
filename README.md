@@ -314,7 +314,7 @@ The following table shows the gems I used for this project. Most of the default 
 
 <br>
 <hr>
-*Some static images have been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating gh-pages and what not then link the image folder, etc. I'm super busy. Image problem solved via GitHub Cloud Services.*
+*Some static images have been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating gh-pages and what not then link the image folder, etc. I'm super busy. <br><br> **Image problem solved via GitHub Cloud Services.***
 <hr>
 
 My DB's use SHA-256 storage of passwords and even though I may maintain some client servers, there is no way I can access user passwords as they are stored as a hash. 
