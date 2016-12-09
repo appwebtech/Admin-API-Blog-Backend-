@@ -312,8 +312,10 @@ The following table shows the gems I used for this project. Most of the default 
 
 ### Hashed Password 
 
-NB: Some static images have been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating gh-pages and what not then link the image folder, etc. I'm super busy. So I'll switch to main branch without img commits and sort out......later!
-
+<br>
+<hr>
+*Some static images have been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating gh-pages and what not then link the image folder, etc. I'm super busy. Image problem solved via GitHub Cloud Services.*
+<hr>
 
 My DB's use SHA-256 storage of passwords and even though I may maintain some client servers, there is no way I can access user passwords as they are stored as a hash. 
 To crack an hash algorithm a black hat hacker would need to find a collision within the hash using a preimage attack, possibly with the help of a cryptographic hash function. 
@@ -720,13 +722,13 @@ https://it.pinterest.com/appwebtech/
 
 
 
-Disclaimer: I apologise for some of my commit messages. "They are raw and un-edited" with some un-professional lingo. When working on Mock-ups/Prototypes, I usually push after switching branches and editing commit messages on github is effective only with "reset --hard" or "--force-with-lease" which can really mess with project history. 
-Once again, sorry for that, It does happen when coding late at night if the sole intention of making the project is to be viewed without the source code or when running a hackathon with other developers.
-
-
 ## License
 
-MIT License. Copyright 2016 Appwebtech. http://theappwebtech.com
+MIT License. Copyright 2016 
+<br><br>
 
+<hr>
+
+*Disclaimer: I apologise for some of my commit messages. "They are raw and un-edited" with some un-professional lingo. When working on Mock-ups/Prototypes, I usually push after switching branches and editing commit messages on github is effective only with "reset --hard" or "--force-with-lease" which can really mess with project history. Once again, sorry for that, It does happen when coding late at night if the sole intention of making the project is to be viewed without the source code* 
 
 
