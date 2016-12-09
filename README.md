@@ -730,6 +730,6 @@ MIT License. Copyright 2016
 
 <hr>
 
-*Disclaimer: I apologise for some of my commit messages. "They are raw and un-edited" with some un-professional lingo. When working on Mock-ups/Prototypes, I usually push after switching branches and editing commit messages on github is effective only with "reset --hard" or "--force-with-lease" which can really mess with project history. Once again, sorry for that, It does happen when coding late at night if the sole intention of making the project is to be viewed without the source code* 
+*Disclaimer: I apologise for some of my commit messages. "They are raw and un-edited" with some un-professional lingo. When working on Mock-ups/Prototypes, I usually push after switching branches and editing commit messages on github is effective only with "reset --hard" or "--force-with-lease" which can really mess with project history. Once again, sorry for that, It does happen when coding late at night if the sole intention of making the project is to be viewed without the source code or when running a hackathon with fellow developers.* 
 
 
