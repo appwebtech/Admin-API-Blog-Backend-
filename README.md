@@ -441,6 +441,7 @@ I won't go into details explaining what is happening on each individual model du
 #### Settings
 The Settings model access is accessed only by the moderator via login credentials and s/he can approve posts, change page settings among other [CRUD](http://searchdatamanagement.techtarget.com/definition/CRUD-cycle) operations.
 ![setttings](https://cloud.githubusercontent.com/assets/20464709/21051610/65726d8e-be21-11e6-98a8-25fd509ad8ef.png)
+The Website App name is displayed under the site_name. Number of posts can be limited per page and a boolean of true can trigger the Web App's status to under_maintenance sending it offline. 
 
 <br><hr>
 #### Moderators
