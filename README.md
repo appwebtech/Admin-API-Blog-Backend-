@@ -556,7 +556,7 @@ end
 ```
 
 
-The instance variable @visitor which is under the visitor function will manage the VisitorJoseService under the class declaration above using strong_params under the main class of MessagesController which inherits from the ApplicationController below. 
+The instance variable @visitor which is under the visitor function will manage the VisitorJoseService under the class declaration above. Under the main class of MessagesController below, data inheritance is from the ApplicationController and the visitor method instantiates @visitor and points it to the aforementioned VisitorJoseService. 
 
 ```ruby
 class MessagesController < ApplicationController
