@@ -48,35 +48,35 @@ In order to visualise the server side functionalities, with the database (DB) an
 
 The source code is provided in the app and because the software design pattern that I have used to implement the UI is the Model View Controller [MVC](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html), then 90% of the code will reside within the following paths:
 
-*app/assets* Mostly FrontEnd work that I will do subsequent to this whilst merging the two projects.
-*app/controllers* To fetch data from the DB and send to view and vice versa.
-*app/views* The view. (Which will be seen from your favorite browser.)
-*app/models* The DB models
-*app/db* The DB structure.
+**app/assets** Mostly FrontEnd work that I will do subsequent to this whilst merging the two projects. <br>
+**app/controllers** To link data from the Model and send to view and vice versa.<br>
+**app/views** The view. (Which will be seen from your favorite browser.)<br>
+**app/models** The DB models <br>
+**app/db** The DB migrations, schema, seed data etc.
 
-I'll restrict myself withing the Model part of MVC, because thats where the DB resides and coding to interact with it is done.
+I'll restrict myself withing the Model part of **MVC**, because thats where the DB resides and coding to interact with it is done.
 
-When people ask about the structure of the DB (which makes sense because it's part of Server Side Coding), the db paths are usually sent to them and since code is not everyone's language, they accept the project only to revert back on the same issue creating a loop of correspondence.
+When people ask about the structure of the DB (which makes sense because it's part of Server Side Coding), the DB paths are usually sent to them and since code is not everyone's language, they accept the project only to revert back on the same issue creating a loop of correspondence.
 
-That is why I have decided to create a snapshots of the DB architecture using external softwares to visualize the whole process of how data is stored and accessed via MVC. 
+That is why I have decided to create snapshots of the DB architecture using external softwares to visualize the whole process of how data is stored and accessed via MVC. 
 
-I would like to repeat that this project has both a [Client Side](), a [Server Side]() and the full fledge  [Website App]() which will have both Technologies merged together. No sooner do I code and merge the third stack than I will push it to GitHub. (Possibly start of 2017)
+I would like to repeat that this project has both a [Client Side](), a [Server Side]() and the full fledge  [Website App]() which will have both Technologies merged together. No sooner do I code and merge the third stack than I will push it to GitHub. (Possibly start of 2017 or there about)
 
 I've tested the overall performance on different connections like GPRS, 2G, 3G, 4G, DSL, ISDN and 802.11(n and ac) and the load time is impressive given that there aren't images or videos at this point.
 
 Anyway, the FrontEnd design runs on Bootstrap 3 whilst the BackEnd system runs on Ruby on Rails.
-I refrained to use many gems like Simple Forms, that make coding easier, and tried to use vanilla code, touching each part whilst keenly observing it's functionality and interactability. Another reason is because it helps me come with ideas and broaden my thinking. Oh yes! Programming makes you think. 
+I refrained to use many gem plugins like Simple Form, Device, etc that make coding easier, and tried to use vanilla code, touching each part whilst keenly observing it's functionality and interactability. Another reason is because it helps me come with ideas and broaden my thinking. Oh yes! Programming makes you think. 
 
 
 ## Why Ruby on Rails?
 
-Ruby is an Object Oriented Programming Language and almost every code is an object. It's easy to code, share with other developers and de-bug across platforms. Its well supported in [GitHub](https://github.com/) and [BitBucket](https://bitbucket.org/) and it's versatile in solving many problems in organisations. 
+Ruby is an Object Oriented Programming Language and almost every code is an object. It's easy to code, share with other developers and de-bug across platforms. Its well supported by the [Open-Source](https://en.wikipedia.org/wiki/Open-source_model) community in [GitHub](https://github.com/) and [BitBucket](https://bitbucket.org/) and it's versatile in solving many problems in organisations. (*At the onset of 2016, a colleague of mine and I took a challenge to build a gem that would interact with Ruby to access, sort and classify Big Data in a certain firm. We saved the firm over 400 hrs of work if they had done that manually*)
 
 Ruby is compatible with Frameworks like Rails, Sinatra, Padrino, Cuba etc and employs the [Dont Repeat Yourself (DRY)](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161) principle of coding.
 
 When you get the hang of Ruby and a Framework of your choice you become very productive and organised. Security can be enhanced using a one line of code, and Cross-site Scripting (XSS) are rare in Ruby Applications. 
 
-Been an Open-Source enthusiast, I can't help mentioning that Ruby is Open Source like Linux, etc which is the future of Software Development Engineering in my opinion. 
+Been an Open-Source enthusiast, I can't help mentioning that Ruby is Open Source like Linux, AForge.NET, Blender, OpenCog etc which is the future of Software Development Engineering in my opinion. 
 <br><br><hr>
 
 # Technical Requirements
@@ -312,11 +312,6 @@ The following table shows the gems I used for this project. Most of the default 
 
 ### Hashed Password 
 
-<br>
-<hr>
-*Some static images have been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because GitHub wants me to commit and track them. Meanwhile I'll use dropbox while I search for a solution. I dont feel like creating gh-pages and what not then link the image folder, etc. I'm super busy. <br><br> **Image problem solved via GitHub Cloud Services.***
-<hr>
-
 My DB's use SHA-256 storage of passwords and even though I may maintain some client servers, there is no way I can access user passwords as they are stored as a hash. 
 To crack an hash algorithm a black hat hacker would need to find a collision within the hash using a preimage attack, possibly with the help of a cryptographic hash function. 
 That would take O(2^n/2) time in case of integers where n ∈ ß (ß = Length of hash fn in bits)
@@ -335,18 +330,21 @@ Even the best super-computers in the world that some folks are using to mint Bit
 
 I created different models eg Comments, Messages, Moderators etc and made associations between them to simplify things by hitting the DB in a straight forward way without overloading it. This is very useful especially when the client is adding or deleting data from the View. 
 
+<hr>
+*Some static images have been separated from my main repo because I had hosted them in Amazon CloudFront. I later tried Akamai which is also a cool CDN and had the same issue because apparently GitHub wants me to commit and track them. Meanwhile I'll use my private server host to target images on a popup upon clicking a link while I search for a solution.* <br> **Image problem solved via GitHub Cloud Services.***
+<hr>
 Below is the Database Architecture Mockup. 
 
 ![workbench](https://cloud.githubusercontent.com/assets/20464709/21051430/7df0d8ce-be20-11e6-8da2-7865e5ac0b5b.png)
 
 I have paired the models to illustrate which active record belongs where with a clear illustration of Associations (has_one, has_and_belongs_to_many, has_and_belongs, etc).
 
-I also made a twist of the DB architecture design to create a Polymorphic Association. If you look at the "belongs_to" Notifications declaration model, you see that the model itself has an identification ID, a notifiable_id which is a VARCHAR(45), an notifiable_type of VARCHAR(45) and a comments_id which is an integer {*I wont go in depth about SQL character size here*}.
+I also made a twist of the DB architecture design to create a Polymorphic Association. If you look at the "belongs_to" Notifications model declaration, you see that the model itself has an ID of type Integer, a notifiable_id which is a VARCHAR(45), an notifiable_type of VARCHAR(45) and a comments_id which is an integer {*I wont go in depth about SQL Data Types here*}.
 The vital thing to note is the ability to use polymorphism to save two models in one table.
 
 ### Active Record Models Schema
 
-The Ruby DSL within the Active Record is amazing in creating dynamic databases. The [RDBMS](https://en.wikipedia.org/wiki/Relational_database) that Ruby uses is easily queried via the Interactive Ruby Shell ([IRB](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell)) while programming. After creating a Mockup of how I intended the database to look, I created migrations and the schema for each model is illustrated below.
+The Ruby DSL within the Active Record is amazing in creating dynamic DB's. The [RDBMS](https://en.wikipedia.org/wiki/Relational_database) that Ruby uses is easily queried via the Interactive Ruby Shell ([IRB](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell)) while programming. After creating a Mockup of how I intended the database to look, I created migrations and the schema for each model is illustrated below.
 
 ```ruby
 ActiveRecord::Schema.define(version: 20161112093722) do
@@ -486,7 +484,7 @@ Apart from the main table id, a post and tag id have been added to tag each post
 <br><hr>
 
 #### Tags
-A tag name of value string has been added. This can be handy when searching the database. In present day, a database can hit the one million records mark within days if not hours.
+A tag name of value string has been added. This can be handy when searching the database. In present day, a database can hit the one million records mark within days if not hours in cases of social media platforms.
 ![tags](https://cloud.githubusercontent.com/assets/20464709/21051641/9896fb6c-be21-11e6-9da0-9d6a18931f60.png)
 
 <br><hr>
@@ -520,7 +518,7 @@ end
 Hopefully the trend is becoming clear now. The image shows generated data of the Visitor model. Each visitor has a fullname, an e-mail and the date s/he was created and/or updated. Each visitor will accept nested attributes from Comments & Messages and has_many (Notifications, Comments and Messages). 
 ![visitors](https://cloud.githubusercontent.com/assets/20464709/21051679/c3638b9e-be21-11e6-92d7-69227138e652.png)
 
-For a cleaner coding environment, I've created a service "visitor_jose_service.rb" that will ensure efficient communication by the controller to the database. The rule of the thump is to have a fast access of data. In an e-commerce website where upselling is vital, you dont want users to switch to another website due to a slow platform.
+For a cleaner coding environment, I've created services, one of them called "visitor_jose_service.rb" that will ensure efficient communication by the controller to the database. The rule of the thump is to have a fast access of data. In an e-commerce website where upselling is vital, you dont want users to switch to another website due to a slow platform.
 
 ```ruby
 class VisitorJoseService
@@ -587,7 +585,7 @@ end
 
 ```
 
-For security reasons (attacks, malicious scripts, etc), I created two controllers for messages, comments and posts. Controllers performing CRUD operations will inherits data from the Admin::ApplicationController, former ActionController::Base in previous Rails versions.
+For security reasons (attacks, malicious scripts, etc), I created two controllers for Messages, Comments and Posts. Controllers performing CRUD operations will inherits data from the Admin::ApplicationController, former ActionController::Base in previous Rails versions.
 
 ```ruby
 class Admin::MessagesController < Admin::ApplicationController
@@ -624,7 +622,7 @@ end
 
 After the request is made by the user, a form will be displayed on the browser(View) and data will be inputted. The data will reach again the controller via the service and then the model will ensure that it's saved well within the database tables and the cycle will start all over again. 
 
-Below is an html form embedded in ruby. *(Syntax may not highlight properly due to a mixture of html and erb tags.)*
+Below is an html form embedded in ruby.
 
 ```erb
 <h1>Messages#new</h1>
