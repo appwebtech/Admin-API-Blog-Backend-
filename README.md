@@ -2,7 +2,7 @@
 
 <div align="center">
 <h1>Admin API Ruby on Rails <em>Backend system</em></h1> 
-<h2>Synopsis of Software Development</h2>
+<h2>Software Development Documentation</h2>
   <h3>
     <a href="#">
       FrontEnd
@@ -28,23 +28,23 @@
 
 ## Introduction
 
-In the Web Development Industry, developer-client hinderances do arise vis-à-vis technology mismatch, ideal frameworks to use, frameworks in beta release, SEO, target reach, design process, end-product, tweaking the nitty-gritty to wow both client and end user, etc etc etc. 
+In the Web Development Industry, developer-client hindrances do arise vis-à-vis technology mismatch, ideal frameworks to use, frameworks in beta release, SEO, target reach, design process, end-product, tweaking the nitty-gritty to wow both client and end user, etc. 
 
-Many a client who are in need of a Website App find themselves in a dilemma on who to hire, what tech to be used, and above all what the development process will entail. So the client would do what most people do. Google. They type and hit the search button only to realise that there are a myriad ways to solve their problems and approaching a skilled developer would be the best thing. So they search for portfolios  (by the way, most designers/developers rarely keep them as they have already built a customer base) and eventually contact the seemingly best. 
+Many a client who are in need of a Website App find themselves in a dilemma on who to hire, what tech to be used, and above all what the development process will entail. So the client would do what most people do. Google. They type and hit the search button only to realize that there are a myriad ways to solve their problems and approaching a skilled developer would be the best thing. So they search for portfolios  (by the way, most designers/developers rarely keep them as they have already built a customer base) and eventually contact the seemingly best. 
 
-After a series of e-mailing, they realise that the dude or dudess(I'm all for  affirmative action fellows :-) does only half of the work. The designer would normally do [FrontEnd Design work](https://www.toptal.com/front-end/job-description), the developer would do [BackEnd Development](https://www.toptal.com/back-end/job-description) whilst a [FullStack Developer](https://www.rubysteps.com/articles/2014/so-you-want-to-become-a-full-stack-developer/) has the sweet spot of doing both FrontEnd and BackEnd work. 
+After a series of e-mailing, they realize that the dude or dudess(I'm all for  affirmative action fellows :-) does only half of the work. The designer would normally do [FrontEnd Design work](https://www.toptal.com/front-end/job-description), the developer would do [BackEnd Development](https://www.toptal.com/back-end/job-description) whilst a [FullStack Developer](https://www.rubysteps.com/articles/2014/so-you-want-to-become-a-full-stack-developer/) has the sweet spot of doing both FrontEnd and BackEnd work. 
 
 ![fullstack](https://cloud.githubusercontent.com/assets/20464709/21051393/562fecee-be20-11e6-844c-f6e2105b454c.jpeg)
 
-From my experience, I have come to realise that many are not aware what it means by Client Side and Server Side. They always say; I just want it to look "Amazing", "Beautiful!", "Great!", or even "Awesome!". This is what has led me to do this project in tranches using [SoC](https://en.wikipedia.org/wiki/Separation_of_concerns) as an eye opener of what it means to work on the Client (FrontEnd) and Server (BackEnd). 
+From my experience, I have come to realize that many are not aware what it means by Client Side and Server Side. They always say; I just want it to look "Amazing", "Beautiful!", "Great!", or even "Awesome!". This is what has led me to do this project in tranches using [SoC](https://en.wikipedia.org/wiki/Separation_of_concerns) as an eye opener of what it means to work on the Client (FrontEnd) and Server (BackEnd). 
 
 Later on I'll amalgamate the FrontEnd and BackEnd systems to make a fully functional website App.
 
-Many newbies in the industry never explain themselves so much on what to expect on a BackEnd design, only to wake up and find a deluge of e-mails telling me that the design lacks styling, responsiveness, etc. Then after explaining how the different platforms work, the client would realise that s/he is pointing at a FrontEnd issue which has nothing to do with the BackEnd. 
+Many newbies in the industry never explain themselves so much on what to expect on a BackEnd design, only to wake up and find a deluge of e-mails telling them that the design lacks styling, responsiveness, etc. Then after explaining how the different platforms work, the client would realize that s/he is pointing at a FrontEnd issue, which has nothing to do with the BackEnd. 
 
-It is vital to know basic job descriptions in web development, the technologies to be used and what to expect. Accepting the agreement without knowing the terminologies used can be a set-back and a time loss.
+It is vital to know basic job descriptions in web development, the technologies to be used and what to expect. Accepting the agreement without knowing the terminologies used can be a setback and a time loss.
 
-In order to visualise the server side functionalities, with the database (DB) and how the App interacts with data, I have created snapshots of the DB to try and visualise what is happening behind the scenes.
+In order to visualize the server side functionalities, with the database (DB) and how the App interacts with data, I have created snapshots of the DB to try and visualize what is happening behind the scenes.
 
 The source code is provided in the app and because the software design pattern that I have used to implement the UI is the Model View Controller [MVC](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html), then 90% of the code will reside within the following paths:
 
@@ -54,35 +54,41 @@ The source code is provided in the app and because the software design pattern t
 **app/models** The DB models <br>
 **app/db** The DB migrations, schema, seed data etc.
 
-I'll restrict myself withing the Model part of **MVC**, because thats where the DB resides and coding to interact with it is done.
+I'll restrict myself within the Model part of **MVC**, because that's where the DB resides and coding to interact with it is done.
 
 When people ask about the structure of the DB (which makes sense because it's part of Server Side Coding), the DB paths are usually sent to them and since code is not everyone's language, they accept the project only to revert back on the same issue creating a loop of correspondence.
 
-That is why I have decided to create snapshots of the DB architecture using external softwares to visualize the whole process of how data is stored and accessed via MVC. 
+That is why I have decided to create snapshots of the DB architecture using external software to visualize the whole process of how data is stored and accessed via MVC. 
 
 I would like to repeat that this project has both a [Client Side](), a [Server Side]() and the full fledge  [Website App]() which will have both Technologies merged together. No sooner do I code and merge the third stack than I will push it to GitHub. (Possibly start of 2017 or there about)
 
 I've tested the overall performance on different connections like GPRS, 2G, 3G, 4G, DSL, ISDN and 802.11(n and ac) and the load time is impressive given that there aren't images or videos at this point.
 
 Anyway, the FrontEnd design runs on Bootstrap 3 whilst the BackEnd system runs on Ruby on Rails.
-I refrained to use many gem plugins like Simple Form, Device, etc that make coding easier, and tried to use vanilla code, touching each part whilst keenly observing it's functionality and interactability. Another reason is because it helps me come with ideas and broaden my thinking. Oh yes! Programming makes you think. 
+I refrained to use many gem plugins like Simple Form, Device among others that make coding easier, and tried to use vanilla code, touching each part whilst keenly observing it's functionality and intractability. Another reason is because it helps me come with ideas and broaden my thinking. Oh yes! Programming makes you think. 
 
 
 ## Why Ruby on Rails?
 
-Ruby is an Object Oriented Programming Language and almost every code is an object. It's easy to code, share with other developers and de-bug across platforms. Its well supported by the [Open-Source](https://en.wikipedia.org/wiki/Open-source_model) community in [GitHub](https://github.com/) and [BitBucket](https://bitbucket.org/) and it's versatile in solving many problems in organisations. (*At the onset of 2016, a colleague of mine and I took a challenge to build a gem that would interact with Ruby to access, sort and classify Big Data in a certain firm. We saved the firm over 400 hrs of work if they had done that manually*)
+Ruby is an Object Oriented Programming Language and almost every code is an object. It's easy to code, share with other developers and de-bug across platforms. Its well supported by the [Open-Source](https://en.wikipedia.org/wiki/Open-source_model) community in [GitHub](https://github.com/) and [BitBucket](https://bitbucket.org/) and it's versatile in solving many problems in organizations. (*At the onset of 2016, a colleague of mine and I took a challenge to build a gem that would interact with Ruby to access, sort and classify Big Data in a certain firm. We saved the firm over 400 hrs of work if they had done that manually*)
 
-Ruby is compatible with Frameworks like Rails, Sinatra, Padrino, Cuba etc and employs the [Dont Repeat Yourself (DRY)](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161) principle of coding.
+Ruby is compatible with Frameworks like Rails, Sinatra, Padrino, Cuba etc and employs the [Don't Repeat Yourself (DRY)](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161) principle of coding.
 
-When you get the hang of Ruby and a Framework of your choice you become very productive and organised. Security can be enhanced using a one line of code, and Cross-site Scripting (XSS) are rare in Ruby Applications. 
+When you get the hang of Ruby and a Framework of your choice you become very productive and organized. Security can be enhanced using a one line of code, and Cross-site Scripting (XSS) are rare in Ruby Applications. 
 
 Been an Open-Source enthusiast, I can't help mentioning that Ruby is Open Source like Linux, AForge.NET, Blender, OpenCog etc which is the future of Software Development Engineering in my opinion. 
 <br><br><hr>
 
-# Technical Requirements
+## Software Engineering Technologies & Methodology
+
+During the Software Development Process (SDP), many designers may elect to use [Prototyping](https://en.wikipedia.org/wiki/Prototype), [Spiral](https://en.wikipedia.org/wiki/Spiral_model) or [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) methodologies to organize their ideas and thoughts on how to solve problems. They define specific deliverables to be done by a project team and later assemble and test the product. 
+
+As you will notice, my design approach leans more on Iterative and Incremental Development (IID). Combining cyclic processes of prototyping, testing and analyzing coupled with phase testing as the software grows; thus allowing partial UI/UX feel and early rectifications and enhancements. 
+
+[RubyGems](https://rubygems.org/) are designed and tested in the open-source arena, which are exemplary for IID from a design perspective; the use of Byebug, Kaminari, Bootstrap-sass and Faker enhanced different functionalities streamlining the design process. 
 
 <h3>Table of Contents</h3>
-<details>
+
 - [Ruby and Rails Environment](#ruby-and-rails-environment)
 - [Byebug minitest for Testing and Debugging](#byebug-minitest-for-testing-and-debugging)
   - [Build Status](#build-status)
@@ -91,7 +97,7 @@ Been an Open-Source enthusiast, I can't help mentioning that Ruby is Open Source
   - [Clean](#clean)
   - [Easy to use](#easy-to-use)
   - [Simple scope-based API](#simple-scope-based-api)
-  - [Customizable engine-based I18n-aware helper](#customizable-engine-based-I18n-aware-helper)
+  - [Customizable engine-based I18n-aware helper](#customizable-engine-based-i18n-aware-helper)
 - [Bootsrap-sass](#bootsrap-sass)
 - [Faker](#faker)
 - [Database Snapshots](#database-snapshots)
@@ -111,7 +117,8 @@ Been an Open-Source enthusiast, I can't help mentioning that Ruby is Open Source
 - [Deployment instructions](#deployment-instructions)
 - [Developer](#developer)
 - [Contacts](#contacts)
-</details>
+- [License](#license)
+
 
 
 ## Ruby and Rails Environment 
@@ -313,7 +320,7 @@ The following table shows the gems I used for this project. Most of the default 
 ### Hashed Password 
 
 My DB's use SHA-256 storage of passwords and even though I may maintain some client servers, there is no way I can access user passwords as they are stored as a hash. 
-To crack an hash algorithm a black hat hacker would need to find a collision within the hash using a preimage attack, possibly with the help of a cryptographic hash function. 
+To crack an hash algorithm a blackhat hacker and his shenanigans would need to find a collision within the hash using a preimage attack, possibly with the help of a cryptographic hash function. 
 That would take O(2^n/2) time in case of integers where n ∈ ß (ß = Length of hash fn in bits)
 
 SHA-2 outputs 512 bits and thus would take O(2^256) times. That means that if you had particulates of wheat flour numbering 1e+80, they would estimate to 1.185711e+80 which can give a sense of what O(2^256) means. 
@@ -323,7 +330,7 @@ For a 12 bytes password, it would roughly take ~0,22s (~2^-2s) for 65536 (1.1857
 1.7668471e+72 * 2^-2 = 4.4171177e+71 ~ 1e+72s ~ 3,17 * 1e+64 years
 ```
 
-Even the best super-computers in the world that some folks are using to mint Bitcoins wouldn't be able to brute-force successfully that hash. That's why Ruby on Rails in built security features are efficient in detering attacks. Malicious scripting, CSRF, DoS, DDoS etc are often targeted in vulnerable web platfroms. 
+Even the best super-computers in the world that some folks are using to mine Bitcoins wouldn't be able to brute-force successfully that hash. That's why Ruby on Rails in built security features are efficient in detering attacks. Malicious scripting, CSRF, DoS, DDoS etc are often targeted in vulnerable web platfroms. 
 
 
 ### Active Record Models Tables
@@ -728,6 +735,6 @@ MIT License. Copyright 2016
 
 <hr>
 
-*Disclaimer: I apologise for some of my commit messages. "They are raw and un-edited" with some un-professional lingo. When working on Mock-ups/Prototypes, I usually push after switching branches and editing commit messages on github is effective only with "reset --hard" or "--force-with-lease" which can really mess with project history. Once again, sorry for that, It does happen when coding late at night if the sole intention of making the project is to be viewed without the source code or when running a hackathon with fellow developers.* 
+*Disclaimer: I apologize for some of my commit messages. "They are raw and un-edited" with some un-professional lingo. When working on Mock-ups/Prototypes, I usually push after switching branches and editing commit messages on github is effective only with "reset --hard" or "--force-with-lease" which can really mess with project history. Once again, sorry for that, It does happen when coding late at night if the sole intention of making the project is to be viewed without the source code or when running a hackathon with fellow developers.* 
 
 
