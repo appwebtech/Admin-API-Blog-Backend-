@@ -60,7 +60,7 @@ When people ask about the structure of the DB (which makes sense because it's pa
 
 That is why I have decided to create snapshots of the DB architecture using external software to visualize the whole process of how data is stored and accessed via MVC. 
 
-I would like to repeat that this project has both a [Client Side](), a [Server Side]() and the full fledge  [Website App]() which will have both Technologies merged together. No sooner do I code and merge the third stack than I will push it to GitHub. (Possibly start of 2017 or there about)
+I would like to repeat that this project has both a [Client Side](https://github.com/appwebtech/Blog-FrontEnd-), a [Server Side](https://github.com/appwebtech/Admin-API-Blog-Backend-) and the full fledge  [Website App](https://#) which will have both Technologies merged together. No sooner do I code and merge the third stack than I will push it to GitHub. (Possibly start of 2017 or there about)
 
 I've tested the overall performance on different connections like GPRS, 2G, 3G, 4G, DSL, ISDN and 802.11(n and ac) and the load time is impressive given that there aren't images or videos at this point.
 
