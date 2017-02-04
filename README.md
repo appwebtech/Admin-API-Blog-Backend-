@@ -4,11 +4,11 @@
 <h1>Admin API Ruby on Rails <em>Backend system</em></h1> 
 <h2>Software Development Documentation</h2>
   <h3>
-    <a href="#">
+    <a href="https://github.com/appwebtech/Blog-FrontEnd-">
       FrontEnd
     </a>
     <span> | </span>
-      <a href="#">
+      <a href="https://github.com/appwebtech/Admin-API-Blog-Backend-#active-record-models-data">
         BackEnd
       </a>
     <span> | </span>
