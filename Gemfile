@@ -18,7 +18,7 @@ gem 'bootstrap', '~> 4.0.0.alpha5'
  gem 'bcrypt', '~> 3.1.7'
 
  #Paginator Gem
- gem 'kaminari', '~> 0.17.0'
+ gem 'kaminari', '~> 1.2.1'
 
 
 group :development, :test do
